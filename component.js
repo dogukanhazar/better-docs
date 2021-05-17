@@ -64,7 +64,11 @@ var parseReact = function (filePath, doclet) {
         displayName: doclet.name,
       }
     } else {
-      throw error
+       return {
+        props: [],
+        filePath: filePath,
+        displayName: doclet.name,
+      }
     }
   }
   
